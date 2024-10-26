@@ -1,0 +1,17 @@
+### Get top level comments
+GET http://localhost:3000/comments HTTP/1.1
+
+
+### Get comments by parent comment
+GET http://localhost:3000/comments?parentId=65ec4a1c349947eb6ec450fe HTTP/1.1
+
+
+### Create
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+  "content": "quer tomar cafe?",
+  "userId": "65ec402cd095b437ca5c1209",
+  "parentId": "65ed9a351c3dd02efcccdb66"
+}
